@@ -52,3 +52,9 @@
 .lightText {
   color: #666;
 }
+
+.button {
+  color: pink;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

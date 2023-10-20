@@ -1,15 +1,24 @@
+// manipulates the head of the HTML
 import Head from "next/head";
+
+// for optimizing and rendering images
 import Image from "next/image";
+
+// css styles
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
+
+//navigating between different pages
 import Link from "next/link";
 
 const name = "Verse of the Day";
-export const siteTitle = "Next.js Sample Website";
+// sets the title
+export const siteTitle = "Daily Devotions";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      {/* sets metadatafor the page like the title, description, and og:Image property for social media sharing  */}
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -22,19 +31,17 @@ export default function Layout({ children, home }) {
             siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
+            {/* // for the picture */}
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt=""
+              height={500}
+              width={500}
+              alt="logo"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -44,7 +51,6 @@ export default function Layout({ children, home }) {
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
                 height={108}
                 width={108}
                 alt=""
@@ -58,6 +64,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      {/* renders the content passed as children to the Layout component */}
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
@@ -65,5 +72,6 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    // exported component is the degault export of this module
   );
 }

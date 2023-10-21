@@ -11,9 +11,9 @@ import utilStyles from "../styles/utils.module.css";
 //navigating between different pages
 import Link from "next/link";
 
-const name = "Verse of the Day";
+const name = "Every Second Devotions";
 // sets the title
-export const siteTitle = "Daily Devotions";
+export const siteTitle = "Second Devotions";
 
 export default function Layout({ children, home }) {
   return (
@@ -25,32 +25,35 @@ export default function Layout({ children, home }) {
           name="description"
           content="Learn how to build a personal website using Next.js"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+        <Image
+          priority
+          src="/public/logo.jpg"
+          height={300}
+          width={300}
+          alt="logo"
         />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
+            {/* for the main page */}
             {/* // for the picture */}
             <Image
               priority
-              src="/images/profile.jpg"
-              height={500}
-              width={500}
-              alt="logo"
+              src="/public/logo.jpg"
+              height={300}
+              width={300}
+              alt="cheese"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
+            {/* for the next page */}
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/public/logo.jpg"
                 height={108}
                 width={108}
                 alt=""

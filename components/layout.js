@@ -20,30 +20,24 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       {/* sets metadatafor the page like the title, description, and og:Image property for social media sharing  */}
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpg" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
         />
-        <Image
-          priority
-          src="/public/logo.jpg"
-          height={300}
-          width={300}
-          alt="logo"
-        />
+        <meta name="og:title" content={siteTitle} />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
             {/* for the main page */}
             {/* // for the picture */}
-            <Image
-              priority
-              src="/public/logo.jpg"
-              height={300}
-              width={300}
+            <img
+              src="/logo.jpg"
+              height={400}
+              width={400}
               alt="cheese"
+              margin-bottom="1em"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -51,13 +45,7 @@ export default function Layout({ children, home }) {
           <>
             {/* for the next page */}
             <Link href="/">
-              <Image
-                priority
-                src="/public/logo.jpg"
-                height={108}
-                width={108}
-                alt=""
-              />
+              <img src="/logo.jpg" height={108} width={108} alt="" />
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>

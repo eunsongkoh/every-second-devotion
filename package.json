@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "node ssr-server.js",
     "start": "next start"
   },
   "dependencies": {

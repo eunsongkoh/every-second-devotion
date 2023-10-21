@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+A Devotional Web App created with Uncovered Treasure API to generate a random verse and a description. 

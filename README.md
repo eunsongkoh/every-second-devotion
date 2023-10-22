@@ -1,6 +1,5 @@
 <div align="center">
 
-
   <img src="public/logo.jpg" alt="logo" width="200" height="auto" />
   <h1>Every Second Devotion</h1>
   
@@ -10,6 +9,7 @@
 <br />
 
 <!-- TechStack -->
+
 ### Tech Stack
 
 <details>
@@ -28,5 +28,7 @@
 </details>
 
 <!-- Getting Started -->
+
 ## Getting Started
-Coming Soon 
+
+Coming Soon

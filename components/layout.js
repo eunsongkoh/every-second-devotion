@@ -34,12 +34,12 @@ export default function Layout({ children, home }) {
             {/* // for the picture */}
             <img
               src="/logo.jpg"
-              height={400}
-              width={400}
-              alt="cheese"
+              height="100%"
+              width="100%"
+              alt="logo"
               margin-bottom="1em"
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
           </>
         ) : (
           <>

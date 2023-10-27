@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^4.40.3-rc.0",
+    "@netlify/plugin-nextjs": "^4.41.-rc.0",
     "axios": "^1.5.1",
     "axios-hooks": "^5.0.1",
     "clsx": "^2.0.0",
@@ -19,7 +19,7 @@
     "styled-jsx": "^5.1.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=18.18.0 <19.0.0"
   },
   "name": "nextjs-blog",
   "description": "This is a starter template for [Learn Next.js](https://nextjs.org/learn).",

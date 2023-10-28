@@ -21,7 +21,12 @@ export default function Home() {
       </section>
       <p>
         <Link href="/posts/first-post">
-          <button className={HomeStyles.button}>generate</button>
+          <button className={HomeStyles.button}>Random Treasure</button>
+        </Link>
+      </p>
+      <p>
+        <Link href="/posts/today">
+          <button className={HomeStyles.button}>Treasure of the Day</button>
         </Link>
       </p>
       <footer>created by Eunsong Koh</footer>

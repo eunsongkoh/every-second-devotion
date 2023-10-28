@@ -20,7 +20,7 @@ export default function Home() {
         </section>
       </section>
       <p>
-        <Link href="posts/first-post">
+        <Link href="/posts/first-post">
           <button className={HomeStyles.button}>generate</button>
         </Link>
       </p>

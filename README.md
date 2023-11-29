@@ -5,9 +5,11 @@
   
   <p>
     A Devotional Web App to generate a devotional any second of the day. Created as a gift for a family member :) 
-    <br />
+  </p>
+  <br />
+  <p>
     Created with: <b>Next.js, Express.js, and Node.js</b>
     Hosted on: Vercel
   </p>
-<br />
+</div>
 

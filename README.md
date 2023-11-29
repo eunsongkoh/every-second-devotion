@@ -9,6 +9,7 @@
   <br />
   <p>
     Created with: <b>Next.js, Express.js, and Node.js</b>
+    <br>
     Hosted on: Vercel
   </p>
 </div>

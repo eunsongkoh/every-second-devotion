@@ -4,31 +4,7 @@
   <h1>Every Second Devotion</h1>
   
   <p>
-    A Devotional Web App to generate a devotional any second of the day. Inspired to be a birthday present. 
+    A Devotional Web App to generate a devotional any second of the day. Created as a gift for a family member :) 
   </p>
 <br />
 
-<!-- TechStack -->
-
-### Tech Stack
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<!-- Getting Started -->
-
-## Getting Started
-
-Coming Soon
